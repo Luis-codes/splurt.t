@@ -20,6 +20,6 @@
   line-height: 16px;
   cursor: pointer;
   transform: rotate(11deg);
-  -ms-transform: rotate(11deg);
-  -webkit-transform: rotate(11deg);
+  -ms-transform: rotate(11deg); /* IE */
+  -webkit-transform: rotate(11deg); /* Opera, Chrome, Safari */
 }
