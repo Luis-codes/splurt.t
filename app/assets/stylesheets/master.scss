@@ -40,10 +40,13 @@
 
 h1 {
   font-family: 'Bangers', cursive;
+  text-align: center;
+  margin-top: 100px;
 }
 
 h2 {
   font-family: 'Pacifico', cursive;
+  text-align: center;
 }
 
 hr {
@@ -56,12 +59,17 @@ hr {
   text-align: center;
 }
 
-.links a {
+.links a, a:hover {
+  text-decoration: none;
   color: black;
   font-size: 25px;
   border-bottom: 1px solid #222; 
   font-family: 'Amamtic SC', cursive;
   font-weight: bold;
+}
+
+.logo:hover {
+  text-decoration: none;
 }
 
 .next-quote {
