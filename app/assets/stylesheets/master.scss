@@ -1,10 +1,6 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bangers&family=Pacifico&display=swap');
 
-* {
-  max-height: 100%;
-}
-
 .circle {
   font-weight: bold;
   font-style: italic;
@@ -29,17 +25,25 @@
   clear: both;
 }
 
+.footer-blurb {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+  text-align: right;
+  font-size: 15px;
+  color: #FFF;
+}
+
+.footer-blurb a {
+  color: #000;
+  font-weight: 600;
+}
+
 h1 {
   font-family: 'Bangers', cursive;
 }
 
 h2 {
   font-family: 'Pacifico', cursive;
-}
-
-header {
-  border-top: 9px solid #FFF;
-  width: 100%;
 }
 
 hr {
@@ -58,6 +62,23 @@ hr {
   border-bottom: 1px solid #222; 
   font-family: 'Amamtic SC', cursive;
   font-weight: bold;
+}
+
+.next-quote {
+  color: #FFF;
+  font-family: 'Amamtic SC', cursive;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.next-quote:hover {
+  text-decoration: none;
+  color: #DDD;
+}
+
+.row {
+  border-top: 9px solid #d9b77c;
+  max-width: 100%;
 }
 
 .slogan {
