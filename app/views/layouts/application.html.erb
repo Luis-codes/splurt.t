@@ -13,14 +13,14 @@
     <header class="row">
       <div class="col-3">
         <%= link_to root_path, class: 'logo' do %>
-        <div class="circle">
-          <br />
-          You know
-          <br />
-          you need
-          <br />
-          to code
-        </div>
+          <div class="circle">
+            <br />
+            You know
+            <br />
+            you need
+            <br />
+            to code
+          </div>
         <% end %>
       </div>
       <div class="col-4 slogan">
@@ -32,12 +32,15 @@
       </div>
     </header>
 
-    <hr />
-
     <br class="clear" />
 
     <div class="container">
-    <%= yield %>
+      <% if flash[:error].present? %>
+        <div class="col-10 offset-1 alert alert-danger">
+          <%= flash[:error].html_safe %>
+        </div>
+      <% end %>
+      <%= yield %>
     </div>
 
     <div class="footer">
@@ -48,7 +51,7 @@
           </div>
           <div class="col-6 footer-blurb">
             Proudly created by <a href="https://www.luiscodes.com/" target="_blank">Luis Rosado</a><br />
-            Want to build your own Splurty Web App - <a href="https://online.bootcampspot.com" target="_blank">Learn how to code here</a>
+            Want to build your own Splurty Web App? - <a href="https://online.bootcampspot.com" target="_blank">Learn how to code here</a>
           </div>
         </div>
       </div>
