@@ -23,18 +23,23 @@
           </div>
         <% end %>
       </div>
-      <div class="col-4 slogan">
-        Splurting out unsolicited advice about entrepreneurship since 2016
+      <div class="col-6 slogan">
+        <strong>Splurting out unsolicited advice about entrepreneurship since 2016</strong>
       </div>
-      <div class="col-5 links">
+      <div class="col-3 links">
         <%= link_to 'Contribute', new_quote_path %>
-        <%= link_to 'About', about_path %>
+        <%= link_to 'About', about_path, class: 'about' %>
       </div>
     </header>
 
     <br class="clear" />
 
     <div class="container">
+        <% if flash[:success].present? %>
+        <div class="col-10 offset-1 alert alert-success">
+          <%= flash[:success].html_safe %>
+        </div>
+      <% end %>
       <% if flash[:error].present? %>
         <div class="col-10 offset-1 alert alert-danger">
           <%= flash[:error].html_safe %>
@@ -43,18 +48,14 @@
       <%= yield %>
     </div>
 
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-sm-6">
-            <%= link_to "This isn't enough, I need more.", root_path, class: 'next-quote' %>
-          </div>
-          <div class="col-6 col-sm-6 footer-blurb">
-            Proudly created by <a href="https://www.luiscodes.com/" target="_blank">Luis Rosado</a><br />
-            Want to build your own Splurty Web App? - <a href="https://online.bootcampspot.com" target="_blank">Learn how to code here</a>
-          </div>
+      <div class="footer row">
+        <div class="col-6 col-sm-6">
+          <%= link_to "This isn't enough, I need more.", root_path, class: 'next-quote' %>
+        </div>
+        <div class="col-6 col-sm-6 footer-blurb">
+          Proudly created by <a href="https://www.luiscodes.com/" target="_blank">Luis Rosado</a><br />
+          Want to build your own Splurty Web App? - <a href="https://online.bootcampspot.com" target="_blank">Learn how to code here</a>
         </div>
       </div>
-    </div>
   </body>
 </html>
