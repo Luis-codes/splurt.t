@@ -28,7 +28,7 @@ header {
 *************************/
 
 .about {
-  margin-left: 1.5em;
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 }
 
 .alert {
@@ -72,6 +72,13 @@ header {
   text-decoration: none;
 }
 
+.img-fluid {
+  border-radius: 100%;
+  border: 3px solid powderblue;
+  shape-outside: circle();
+  float: left;
+}
+
 .jumbotron {
   background: powderblue;
   margin: auto;
@@ -84,7 +91,7 @@ header {
   text-align: center;
 }
 
-.links a, a:hover {
+.links a {
   color: black;
   font-size: 25px; 
   font-family: 'Amamtic SC', cursive;
